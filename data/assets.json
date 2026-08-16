@@ -1,0 +1,50 @@
+[
+  {
+    "asset_id": "substation-ai-01",
+    "name": "Substation AI Decision Service",
+    "kind": "ai_service",
+    "zone": "operations",
+    "criticality": 5,
+    "allowed_capabilities": ["READ_TELEMETRY", "RECOMMEND_SETPOINT"]
+  },
+  {
+    "asset_id": "plc-01",
+    "name": "Breaker Control PLC",
+    "kind": "plc",
+    "zone": "ot",
+    "criticality": 5,
+    "allowed_capabilities": ["READ_STATE", "WRITE_BREAKER"]
+  },
+  {
+    "asset_id": "cooling-01",
+    "name": "Transformer Cooling Controller",
+    "kind": "controller",
+    "zone": "ot",
+    "criticality": 5,
+    "allowed_capabilities": ["READ_STATE", "SET_COOLING"]
+  },
+  {
+    "asset_id": "hist-01",
+    "name": "Operations Historian",
+    "kind": "historian",
+    "zone": "dmz",
+    "criticality": 4,
+    "allowed_capabilities": ["READ_TELEMETRY", "APPEND_TELEMETRY"]
+  },
+  {
+    "asset_id": "model-reg-01",
+    "name": "Model Registry",
+    "kind": "model_registry",
+    "zone": "it",
+    "criticality": 4,
+    "allowed_capabilities": ["READ_MODEL", "DEPLOY_MODEL"]
+  },
+  {
+    "asset_id": "operator-01",
+    "name": "Operator Console",
+    "kind": "hmi",
+    "zone": "operations",
+    "criticality": 5,
+    "allowed_capabilities": ["READ_STATE", "APPROVE_ACTION", "MANUAL_OVERRIDE"]
+  }
+]

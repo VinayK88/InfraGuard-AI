@@ -1,0 +1,30 @@
+[
+  {
+    "artifact_id": "sensor-window-2026-08-16T09",
+    "artifact_type": "operational_data",
+    "source": "hist-01",
+    "expected_content": "temperature=94;load=0.82;voltage=1.01",
+    "observed_content": "temperature=94;load=0.82;voltage=1.01"
+  },
+  {
+    "artifact_id": "feature-schema-v3",
+    "artifact_type": "feature_schema",
+    "source": "feature-pipeline",
+    "expected_content": "temp,load,voltage,device_health",
+    "observed_content": "temp,load,voltage,device_health"
+  },
+  {
+    "artifact_id": "grid-load-model-v14",
+    "artifact_type": "model_artifact",
+    "source": "model-reg-01",
+    "expected_content": "model:grid-load-v14:weights:trusted",
+    "observed_content": "model:grid-load-v14:weights:tampered"
+  },
+  {
+    "artifact_id": "policy-bundle-v6",
+    "artifact_type": "safety_policy",
+    "source": "operator-01",
+    "expected_content": "envelope:v6:cooling>=78;load_shed<=15",
+    "observed_content": "envelope:v6:cooling>=78;load_shed<=15"
+  }
+]

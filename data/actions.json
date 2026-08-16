@@ -1,0 +1,74 @@
+[
+  {
+    "action_id": "act-001",
+    "actor": "substation-ai",
+    "capability": "SET_COOLING",
+    "asset_id": "cooling-01",
+    "metric": "cooling_percent",
+    "requested_value": 60.0,
+    "telemetry_confidence": 0.94,
+    "untrusted_context": false,
+    "provenance_healthy": true,
+    "human_override_requested": false
+  },
+  {
+    "action_id": "act-002",
+    "actor": "maintenance-agent",
+    "capability": "UNAUTHORIZED_PLC_WRITE",
+    "asset_id": "plc-01",
+    "metric": "breaker_setpoint",
+    "requested_value": 1.0,
+    "telemetry_confidence": 0.89,
+    "untrusted_context": true,
+    "provenance_healthy": true,
+    "human_override_requested": false
+  },
+  {
+    "action_id": "act-003",
+    "actor": "substation-ai",
+    "capability": "RECOMMEND_SETPOINT",
+    "asset_id": "substation-ai-01",
+    "metric": "load_shed_percent",
+    "requested_value": 8.0,
+    "telemetry_confidence": 0.96,
+    "untrusted_context": false,
+    "provenance_healthy": true,
+    "human_override_requested": false
+  },
+  {
+    "action_id": "act-004",
+    "actor": "substation-ai",
+    "capability": "RECOMMEND_SETPOINT",
+    "asset_id": "substation-ai-01",
+    "metric": "load_shed_percent",
+    "requested_value": 5.0,
+    "telemetry_confidence": 0.51,
+    "untrusted_context": false,
+    "provenance_healthy": true,
+    "human_override_requested": false
+  },
+  {
+    "action_id": "act-005",
+    "actor": "model-orchestrator",
+    "capability": "DEPLOY_MODEL",
+    "asset_id": "model-reg-01",
+    "metric": null,
+    "requested_value": null,
+    "telemetry_confidence": 1.0,
+    "untrusted_context": false,
+    "provenance_healthy": false,
+    "human_override_requested": false
+  },
+  {
+    "action_id": "act-006",
+    "actor": "operator",
+    "capability": "MANUAL_OVERRIDE",
+    "asset_id": "operator-01",
+    "metric": null,
+    "requested_value": null,
+    "telemetry_confidence": 0.77,
+    "untrusted_context": false,
+    "provenance_healthy": true,
+    "human_override_requested": true
+  }
+]

@@ -1,0 +1,5 @@
+[
+  {"asset_id": "cooling-01", "metric": "cooling_percent", "minimum": 78, "maximum": 100, "unit": "percent"},
+  {"asset_id": "plc-01", "metric": "breaker_setpoint", "minimum": 0, "maximum": 1, "unit": "binary"},
+  {"asset_id": "substation-ai-01", "metric": "load_shed_percent", "minimum": 0, "maximum": 15, "unit": "percent"}
+]
