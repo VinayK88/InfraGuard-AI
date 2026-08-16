@@ -13,7 +13,7 @@
 
 **Safety envelopes · provenance · least privilege · human override · degraded-safe operation · resilience testing**
 
-[Architecture](#architecture) · [Baseline](#baseline-evidence) · [Scenarios](#resilience-scenarios) · [Quick Start](#quick-start) · [Security Boundary](#security--evaluation-boundary)
+[Use Cases](#what-infraguard-ai-is-used-for) · [Architecture](#architecture) · [Baseline](#baseline-evidence) · [Scenarios](#resilience-scenarios) · [Quick Start](#quick-start) · [Security Boundary](#security--evaluation-boundary)
 
 </div>
 
@@ -37,6 +37,37 @@ The lab evaluates AI recommendations and agent actions against operational safet
 | `REQUIRE_APPROVAL` | Human review is required before the action can proceed. |
 | `BLOCK` | The requested action violates a hard safety, integrity, or authorization condition. |
 | `DEGRADED_SAFE` | Autonomous action is suspended and the system enters a predefined safe state. |
+
+---
+
+## What InfraGuard AI is used for
+
+InfraGuard AI is designed as an **assurance and resilience testing environment** for teams evaluating AI-assisted automation before it is trusted with high-consequence operational decisions.
+
+It is useful when the central question is not simply *“Is the model accurate?”* but rather *“Is the entire decision path safe, authorized, explainable, and resilient when something goes wrong?”*
+
+| Use case | What InfraGuard helps evaluate |
+| --- | --- |
+| **AI assurance before deployment** | Whether model or agent recommendations remain inside hard operational safety constraints before they can influence a consequential system. |
+| **Critical-infrastructure cyber resilience** | How an AI-assisted system behaves when telemetry is spoofed or lost, a model is tampered with, an identity overreaches, or a dependency becomes untrusted. |
+| **OT / ICS safety-control validation** | Whether unsafe setpoints are blocked and whether predefined safe states such as manual control or hold-last-safe-setpoint are entered correctly. |
+| **AI and data supply-chain integrity** | Whether operational data, feature schemas, model artifacts, and policy bundles match their expected provenance and integrity state. |
+| **Least-privilege AI / agent authorization** | Whether an AI service or agent is attempting capabilities beyond the permissions of the target asset or declared task. |
+| **Human-in-the-loop design** | Which actions should be autonomous, which require approval, and whether operators can successfully override automation during degraded or unsafe conditions. |
+| **Purple-team and resilience exercises** | Replay deterministic synthetic failure and attack scenarios and measure detection, containment, safe-state transition, and recovery behavior. |
+| **AI governance and architecture review** | Produce interpretable evidence showing why an action was allowed, blocked, degraded, or escalated to human review. |
+
+### Intended users
+
+The lab is most relevant to:
+
+- **AI security and ML platform teams** evaluating safeguards around model- or agent-driven actions;
+- **OT / ICS and critical-infrastructure security teams** exploring safe integration patterns for AI-assisted operations;
+- **security architects and resilience engineers** designing trust boundaries, fallback states, and recovery controls;
+- **red / purple teams** testing failure modes and control effectiveness in a synthetic environment; and
+- **AI governance, risk, and safety teams** that need auditable decision logic rather than model confidence alone.
+
+InfraGuard is a **simulation and engineering lab**, not a production safety controller. Its purpose is to make high-consequence AI assurance concepts concrete, testable, and measurable before they are considered for real operational environments.
 
 ---
 
